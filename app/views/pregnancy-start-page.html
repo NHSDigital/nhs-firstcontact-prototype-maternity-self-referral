@@ -113,30 +113,29 @@
       <p>Use this service to refer yourself to NHS maternity services so you can start your pregnancy care with a midwife if you live in England.</p>
     <p>Pregnancy care (also called antenatal care) is the care you have while you're pregnant to help keep you and your baby as healthy as possible.</p>
   <p> You do not usually need to see a GP. If you're registered with a GP, they'll be told about your pregnancy after your first midwife appointment.</p>
+  
+  {% from 'inset-text/macro.njk' import insetText %}
 
-      <p>If you have a long-term condition or are taking medicine, you can refer yourself but you also need to see a GP. This is to discuss any changes to your care.</p>
+  {{ insetText({
+  html: "<p>If you have a long-term condition or are taking medicine, you can refer yourself for NHS pregnancy care but you also need to see a GP. This is to discuss any changes to your care.</p>"
+  }) }}
+    
       
       <h2 class="nhsuk-heading-m">How to refer yourself for NHS pregnancy care</h2>
 
-      <p>When you use this service, you'll need to enter a postcode, town or city to find local NHS trusts with maternity services.
-        Most use an online form for you to refer yourself.</p>
+      <p>When you use this service, you'll need to enter a postcode, town or city in England to find local NHS trusts with maternity services. You can choose which NHS trust to refer yourself to. Most use an online form to refer yourself.</p>
       <p> If you cannot refer yourself online, the NHS trust's maternity website will tell you other ways to contact them.</p>
-     <p>After you refer yourself, you'll be contacted by the maternity service. They'll book your first midwife appointment, which should happen by the time you're 10 weeks pregnant where possible. </p>
-  
+     <p>After you refer yourself, the maternity service will contact you to book your first midwife appointment. This appointment should happen by the time you're 10 weeks pregnant where possible.</p>
+  <p>If you're more than 10 weeks pregnant you should still refer yourself to start your pregnancy care as soon as possible</p>
      <p> You can cancel your referral at any time.</p>
 
       <a href="/location-search" class="nhsuk-button">
         Start now
       </a>
-    </div>
 
-  </div>  
-  {% from 'inset-text/macro.njk' import insetText %}
+ 
+  <p>Find out about <a href='#' class='nhsuk-link'>about health things you should know in pregnancy</a> to keep you and your baby healthy, including taking folic acid every day, stopping smoking and avoiding alcohol.</p> <p>Find out about <a href='#' class='nhsuk-link'>common symptoms in pregnancy.</a>
+ 
 
-  {{ insetText({
-    html: "<p>Find out about <a href='#' class='nhsuk-link'>about health things you should know in pregnancy</a> to keep you and your baby healthy, including taking folic acid every day, stopping smoking and avoiding alcohol.</p> <p>Find out about <a href='#' class='nhsuk-link'>common symptoms in pregnancy.</a>"
-  }) }}
-</div>
-
-  </div>
+  
 {% endblock %}

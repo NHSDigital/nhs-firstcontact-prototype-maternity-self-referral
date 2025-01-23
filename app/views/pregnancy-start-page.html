@@ -117,25 +117,29 @@
   {% from 'inset-text/macro.njk' import insetText %}
 
   {{ insetText({
-  html: "<p>If you have a long-term condition or are taking medicine, you can refer yourself for NHS pregnancy care but you also need to see a GP. This is to discuss any changes to your care.</p>"
+  html: "<p>If you have a long-term condition or are taking medicine, you can refer yourself for NHS pregnancy care but you also need to see a GP or your specialist. This is to discuss any changes to your care or medicine.</p>"
   }) }}
     
       
       <h2 class="nhsuk-heading-m">How to refer yourself for NHS pregnancy care</h2>
 
-      <p>When you use this service, you'll need to enter a postcode, town or city in England to find local NHS trusts with maternity services. You can choose which NHS trust to refer yourself to. Most use an online form to refer yourself.</p>
-      <p> If you cannot refer yourself online, the NHS trust's maternity website will tell you other ways to contact them.</p>
+      <p>When you use this service, you'll need to enter a postcode, town or city in England to find local NHS trusts with maternity services. You can choose which NHS trust to refer yourself to. You can change your choice at any time in your pregnancy.</p>
+      <p> Most NHS Trusts use an online form to refer yourself. If you cannot refer yourself online, the NHS trust's maternity website will tell you other ways to contact them.</p>
      <p>After you refer yourself, the maternity service will contact you to book your first midwife appointment. This appointment should happen by the time you're 10 weeks pregnant where possible.</p>
-  <p>If you're more than 10 weeks pregnant you should still refer yourself to start your pregnancy care as soon as possible</p>
+  <p>If you're more than 10 weeks pregnant you should still refer yourself to start your pregnancy care as soon as possible.</p>
      <p> You can cancel your referral at any time.</p>
 
       <a href="/location-search" class="nhsuk-button">
         Start now
       </a>
 
- 
-  <p>Find out about <a href='#' class='nhsuk-link'>about health things you should know in pregnancy</a> to keep you and your baby healthy, including taking folic acid every day, stopping smoking and avoiding alcohol.</p> <p>Find out about <a href='#' class='nhsuk-link'>common symptoms in pregnancy.</a>
- 
-
+      {{ insetText({ 
+        html: "<h2>Health in Pregnancy</h2>
+        <p>Find out about <a href='/my-url'>about health things you should know in pregnancy</a> to keep you and your baby healthy, including taking folic acid every day, stopping smoking and avoiding alcohol.</p> <p>Find out about <a href='/my-url'>common symptoms in pregnancy </a> </p>"
+      }) }}
   
-{% endblock %}
+    </div>
+    
+  </div>
+    </div>
+  {% endblock %}
